@@ -29,5 +29,7 @@ Route::prefix('admin') //prefisso delle rotte
     ->middleware('auth') //filtro dell'autenticazione
     ->name('admin.') //prefisso di tutti i nomi delle rotte
     ->group(function(){
+        // Route::get('/ s')
+
         Route::resource('posts', 'PostController');
 });
